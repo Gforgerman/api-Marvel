@@ -1,19 +1,10 @@
 
 # Marvel´s comics
 
-Prueba para el puesto de Desarrollador Front End.
+PRUEBA TECNICA
 
-El listado esta en por comic en base a super villano, cumpliendo con los siguientes requisitos:
+Creación de una landing page con un diseño libre, desarrollado en REACT JS.
 
-- Se prohíbe el uso de frameworks css.
+Mostrando el uso de CSS, Componentes, Estado, Props, Hooks y consumo de API REST.
 
-- Una imagen cualquiera para simular el comic.
-
-- El nombre del superhéroe/villano que aparece por comic.
-- El nombre del comic.
-
--La posibilidad de eliminar el elemento del listado de forma local.
-
--Resaltar en negritas cuando el comic sea del capitán américa.
-
-https://www.gluo.mx/
+Desde la API de: https://www.marvel.com/ .
