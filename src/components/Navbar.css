@@ -1,44 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
 .Navbarmarvel {
-  width: 30%;
-  padding: 1rem 0rem;
+  width: 45%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 2em;
   background-color: #ffffff;
 }
+.inside{
+  position: fixed;
+  height: 100vh;
+  width: 24%;
+  background-color: #151515;
+}
 @media (max-width:900px) {
 .Navbarmarvel{
   width: 70%;
+  align-items: center;
 }
 }
 .inside{
   position: fixed;
   background-color: #151515;
   height: 100vh;
+  padding: 2em 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .textnav {
-  width: 50%;
-  display: flex;
+  width: 100%;
   font-family: "urbanist";
   font-weight: 700;
-  align-items: center;
+  line-height: 1em;
+  text-align: center;
   color: #f2f2f2;
   letter-spacing: 0.2px;
   font-size: 2em;
   font-family: 300;
-  position: fixed;
-  top: -150px;
-  left: 30px;
-  right: 0;
-  bottom: 0;
+  margin-bottom: 5em;
 }
 @media (max-width:900px) {
   .textnav{
     position:initial;
     width: 100%;
+  }
+  .inside{
+    position: fixed;
+    top: 0;
+    background-color: #151515;
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
 }
@@ -59,7 +76,7 @@
 }
 
 .search-container {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -96,24 +113,22 @@
     font-size: 1.5em;
   }
 }
-@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
+
 
 .containersearch {
   position: absolute;
+  width: 100%;
   margin: auto;
   top: 0;
-  left: 50px;
+  left: 0;
   bottom: 0;
-  width: 300px;
   height: 100px;
-  position: fixed;
 }
 @media screen  and (max-width:900px){
   .containersearch{
     top: 0;
     left: 0;
     right: 0;
-    bottom: 450px;
   }
   }
 

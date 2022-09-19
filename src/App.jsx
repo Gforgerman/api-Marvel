@@ -10,33 +10,29 @@ function App() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
   const [auxData, setAuxData] = useState([]);
-  console.log(auxData);
 
   useEffect(() => {
     fetch(URL_API)
       .then((res) => res.json())
       .then((json) => {
-        console.log(json.data);
         setAuxData(json.data.results);
       })
       .catch((err) => console.log(err));
   }, []);
 
-  const handleClick = (text) => {
-    setAuxData(data);
-    let aux = [];
-    data.forEach((el) => {
-      console.log(el.name);
-      if (el.name.includes(text)) {
-        aux.push(el);
-      }
-      setData(aux);
-    });
-  };
 
   const handleChange = (e) => {
     setSearch(e.target.value);
     setData(auxData);
+    let aux = [];
+    if(search.length>0){
+      data.forEach((el) => {
+        if (el.name.includes(search)) {
+          aux.push(el);
+        }
+        setData(aux);
+      });
+    }
   };
 
   const handleDelete = (id) => {
@@ -50,7 +46,7 @@ function App() {
   };
 
   useEffect(() => {
-    console.log("Cambio dara");
+    console.log("Cambio data");
     setData(auxData);
   }, [auxData]);
 
@@ -58,7 +54,7 @@ function App() {
     <div className="App">
       <div className="background"></div>
       <div className="container">
-        <Navbar search={search} onChange={handleChange} onClick={handleClick} />
+        <Navbar search={search} onChange={handleChange} />
        <div className="sidecard">
         {data.map((el, ind) => (
         
