@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap');
+.Card {
+  width: 250px;
+  background-color: #151515;
+  font-family: "urbanist";
+  font-size: 1.5em;
+  font-weight: 400;
+  border-radius: 4px;
+  display: Flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f2f2f2;
+  border: solid 0.2px #000;
+  margin-bottom: 0.5em;
+  box-shadow: 5px 2px 147px 20px rgba(0,0,0,0.67);
+  -webkit-box-shadow: 5px 2px 147px 20px rgba(0,0,0,0.67);
+  -moz-box-shadow: 5px 2px 147px 20px rgba(0,0,0,0.67);
+}
+
+.card-data {
+  padding: 0.5em 1em;
+  gap: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 80%;
+}
+
+.Card_detail {
+  max-width: 80%;
+  overflow: hidden;
+  font-family: "urbanist";
+}
+.Card_Title{
+  font-weight: 600;
+}
+.info_Card{
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #BBBBBB;
+  display: none;
+}
+.img_card {
+  border-radius: 8px;
+  background-color: blue;
+  width: 130px;
+  height: 130px;
+}
+.Erase {
+  display: flex;
+  justify-content: center;
+  background-color: #ce0404;
+  color: #f2f2f2;
+  width: 60px;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 2px;
+  min-width: 60px;
+}
+.Card:hover {
+  width: 60%;
+  transition: width 0.3s;
+  background-color: #ce0404;
+}
+.Card:active {
+  width: 70%;
+  transition: width 0.3s;
+}
